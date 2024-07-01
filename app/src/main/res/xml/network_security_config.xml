@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Permite el tráfico de texto sin formato (cleartext) -->
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Permite el tráfico de texto sin formato para el dominio:
+             wallet-main.eba-ccwdurgr.us-east-1.elasticbeanstalk.com y sus subdominios -->
+        <domain includeSubdomains="true">wallet-main.eba-ccwdurgr.us-east-1.elasticbeanstalk.com</domain>
+        <!-- Permite el tráfico de texto sin formato para el dominio localhost y sus subdominios -->
+        <domain includeSubdomains="true">localhost</domain>
+    </domain-config>
+</network-security-config>
+
+
